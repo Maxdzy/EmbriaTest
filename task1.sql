@@ -12,7 +12,7 @@ CREATE TABLE `posts` (
   `content` varchar(242) NOT NULL,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `news_id_uindex` (`id`),
+  UNIQUE KEY `posts_id_uindex` (`id`),
   KEY `posts_category_created_index` (`category`,`created`)
 ) ENGINE=InnoDB
 
